@@ -4,6 +4,10 @@
 // Default: 13579
 exports.port = 13579
 
+// Wheter to add "(FILENAME)" after filename
+// Default: true
+exports.addFilename = true
+
 // Whether to omit brackets [] and its content in filenames.
 // Default: true
 exports.ignoreBrackets = true
