@@ -15,6 +15,22 @@ Changed features:
 - Reduced codebase
 - Updated code styling
 <br/>
+
+#### MPC-DiscordRPC -> Simple-MPC-DiscordRPC Stats:  
+**core.js**  
+before: 166 lines, 7,783 chars, 5.64kb  
+after: 86 lines, 3,021 chars, 2.95kb  
+
+**index.js**  
+before: 115 lines, 3,765 chars, 3.67kb  
+after: 75 lines, 2,121 chars, 2.07kb  
+
+**Total**  
+before: 231 lines, 11,548 chars, 9.31kb  
+after: 161 lines, 5,142 chars, 5.02kb  
+-70 lines, -6,406 chars, -4.29kb  
+-69% lines, -44% chars, -54%kb  
+
 <br/>
 
 # Simple MPC-DiscordRPC
