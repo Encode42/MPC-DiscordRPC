@@ -14,7 +14,6 @@ Removed features:
 Changed features:
 - Reduced codebase
 - Updated code styling
-<br/>
 
 #### MPC-DiscordRPC -> Simple-MPC-DiscordRPC Stats:  
 **core.js**  
