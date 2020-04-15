@@ -1,4 +1,7 @@
-# About this fork
+# Simple MPC-DiscordRPC
+Discord Rich Presence for Media Player Classic
+
+## About this fork
 This fork is designed to remove features some might not need.  
 
 Added features:
@@ -28,12 +31,7 @@ after: 75 lines, 2,121 chars, 2.07kb
 before: 231 lines, 11,548 chars, 9.31kb  
 after: 161 lines, 5,142 chars, 5.02kb  
 -70 lines, -6,406 chars, -4.29kb  
--69% lines, -44% chars, -54%kb  
-
-<br/>
-
-# Simple MPC-DiscordRPC
-Discord Rich Presence for Media Player Classic
+-69% lines, -44% chars, -54%kb 
 
 ## How does this work?
 This program simply fetches playback data from MPC-HC / MPC-BE Web Interface, and displays it in your Discord profile through their wonderful [Rich Presence](https://discordapp.com/rich-presence) API.
