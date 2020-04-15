@@ -1,3 +1,10 @@
+# About this fork
+This fork is designed to remove features some might not need.  
+Removed features:  
+- RP Images  
+- Autoquit (for 24/7 use)  
+<br/><br/>
+
 # MPC-DiscordRPC
 Discord Rich Presence for Media Player Classic (Home Cinema and Black Edition)
 
@@ -58,7 +65,7 @@ npm stop
 npm stop
 ```
 
-3. Update this project by [redownloading this project as a .zip file](https://github.com/angeloanan/MPC-DiscordRPC/archive/master.zip) and replacing the old files. 
+3. Update this project by [redownloading this project as a .zip file](https://github.com/Encode42/Simple-MPC-DiscordRPC/archive/master.zip) and replacing the old files. 
 
    Otherwise, if you have Git installed, run:
    ```sh
