@@ -17,7 +17,7 @@ Changed features:
 <br/>
 <br/>
 
-# MPC-DiscordRPC
+# Simple MPC-DiscordRPC
 Discord Rich Presence for Media Player Classic
 
 ## How does this work?
