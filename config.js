@@ -1,12 +1,10 @@
-// See README.md to learn more on each option
-
 // Port on which MPC Web Interface is running.
 // Default: 13579
-exports.port = 12342
+exports.port = 13579
 
-// The seconds in which updates are sent. Must be at least 15.
-// Default: 15
-exports.updateRate = 15
+// The seconds in which updates are sent. Discord has a limit of 15.
+// Default: 5
+exports.updateRate = 5
 
 //// Appearance
 // Wheter to add "(FILENAME)" after filename

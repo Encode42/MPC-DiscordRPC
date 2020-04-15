@@ -22,7 +22,7 @@ log.info("INFO: Ready!");
 
 mediaEmitter.on("CONNECTED", res => {
 	clearInterval(mpcServerLoop);
-	mpcServerLoop = setInterval(checkMPCEndpoint, 5000);
+	mpcServerLoop = setInterval(checkMPCEndpoint, (config.updateRate * 1000));
 	if (!active) log.info(`INFO: Connected to ${res.headers.server}`);
 	active = updatePresence(res, rpc);
 });
