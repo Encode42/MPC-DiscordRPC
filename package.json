@@ -1,11 +1,12 @@
 {
-  "name": "MPC-DiscordRPC",
+  "name": "Simple-MPC-DiscordRPC",
   "version": "0.4.0",
   "main": "index.js",
-  "repository": "https://github.com/angeloanan/MPC-DiscordRPC.git",
-  "bugs": "https://github.com/angeloanan/MPC-DiscordRPC/issues",
+  "repository": "https://github.com/Encode42/Simple-MPC-DiscordRPC.git",
+  "bugs": "https://github.com/Encode42/Simple-MPC-DiscordRPC/issues",
   "author": "angeloanan <anandavid2002@gmail.com>",
   "contributors": [
+	"Encode42 (https://encode42.dev)",
     "Der-Eddy (https://www.eddy-dev.net)",
     "Lucas Miranda <liddack@outlook.com>",
     "MaciejGorczyca (https://github.com/MaciejGorczyca)"

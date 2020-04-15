@@ -2,31 +2,33 @@
 
 // Port on which MPC Web Interface is running.
 // Default: 13579
-exports.port = 13579
+exports.port = 12342
 
+// The seconds in which updates are sent. Must be at least 15.
+// Default: 15
+exports.updateRate = 15
+
+//// Appearance
 // Wheter to add "(FILENAME)" after filename
 // Default: true
-exports.addFilename = true
+exports.addFileExtension = true
 
 // Whether to omit brackets [] and its content in filenames.
 // Default: true
 exports.ignoreBrackets = true
 
 // Whether to omit filetype.
-// Default: false
-exports.ignoreFiletype = false
+// Default: true
+exports.ignoreFiletype = true
 
 // Whether to replace _ with space.
 // Default: true
 exports.replaceUnderscore = true
 
-// Whether to replace dot (.) characters
-// (except the file extension one) with spaces.
+// Whether to replace dot (.) characters with spaces.
 // Default: true
 exports.replaceDots = true
 
-// Whether to display the current file's remaining
-// playback time while playing, instead of showing
-// the elapsed time.
+// Whether to display the current file's remaining time instead.
 // Default: false
 exports.showRemainingTime = false
