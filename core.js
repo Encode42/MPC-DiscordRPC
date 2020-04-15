@@ -42,6 +42,8 @@ const states = {
  * @param {RPCClient} rpc Discord Client RPC connection instance
  */
 const updatePresence = (res, rpc) => {
+    if (res === "destroy") return rpc.destroy();	
+
     // Identifies which MPC fork is running.
     const mpcFork = res.headers.server.replace(' WebServer', '');
 
