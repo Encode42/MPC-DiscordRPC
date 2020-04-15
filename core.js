@@ -30,22 +30,10 @@ let playback = {
 // Defines strings and image keys according to the 'state' string
 // provided by MPC.
 const states = {
-    '-1': {
-        string: 'Idling',
-        stateKey: 'stop_small'
-    },
-    '0': {
-        string: 'Stopped',
-        stateKey: 'stop_small'
-    },
-    '1': {
-        string: 'Paused',
-        stateKey: 'pause_small'
-    },
-    '2': {
-        string: 'Playing',
-        stateKey: 'play_small'
-    }
+    '-1': ''
+    '0': 'Stopped'
+    '1': 'Paused'
+    '2': 'Playing'
 };
 
 /**
@@ -91,10 +79,6 @@ const updatePresence = (res, rpc) => {
         startTimestamp: undefined,
         endTimestamp: undefined,
         details: playback.filename,
-        largeImageKey: mpcFork === 'MPC-BE' ? 'mpcbe_logo' : 'default',
-        largeImageText: mpcFork,
-        smallImageKey: states[playback.state].stateKey,
-        smallImageText: states[playback.state].string
     };
 
     // Makes changes to payload data according to playback state.
@@ -104,14 +88,11 @@ const updatePresence = (res, rpc) => {
             payload.details = undefined;
             break;
         case '1': // Paused
-            payload.state = playback.position + ' / ' + playback.duration;
+            payload.state = playback.position + ' / ' + playback.duration + ' ⏸';
             break;
         case '2': // Playing
-            if (showRemainingTime) {
-                payload.endTimestamp = Date.now() + (convert(playback.duration) - convert(playback.position));
-            } else {
-                payload.startTimestamp = Date.now() - convert(playback.position);
-            }
+            if (showRemainingTime) payload.endTimestamp = Date.now() + (convert(playback.duration) - convert(playback.position));
+            else payload.startTimestamp = Date.now() - convert(playback.position);
             break;
     }
 
