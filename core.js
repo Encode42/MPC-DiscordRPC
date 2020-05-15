@@ -42,7 +42,7 @@ const updatePresence = async (res, rpc) => {
 	}
 	if (replaceDots) playback.filename = playback.filename.replace(/[.](?=.*[.])/g, " ");
 	if (ignoreFiletype) playback.filename = playback.filename.substr(0, playback.filename.lastIndexOf("."));
-	if (addFileExtension) playback.filename = `${playback.filename} (${filename.split('.').pop(-1).toUpperCase()})`
+	if (addFileExtension) playback.filename = `${playback.filename} (${filename.split('.').pop(-1).toUpperCase()})`;
 
 	const payload = {
 		"state": `${playback.duration} total`,
@@ -52,13 +52,13 @@ const updatePresence = async (res, rpc) => {
 	};
 
 	switch (playback.state) {
+		case "-1": rpc.clearActivity(); break;
 		case "1": payload.state = `${playback.position} / ${playback.duration} ⏸`; break;
 		case "2":
 			if (showRemainingTime) payload.endTimestamp = Date.now() + (convert(playback.duration) - convert(playback.position));
 			else payload.startTimestamp = Date.now() - convert(playback.position); break;
 		default: payload.state = `${playback.duration} total ■`;
 	}
-	if (playback.state === "-1") return rpc.clearActivity();
 
 	if ((playback.state !== playback.prevState) || (
 		playback.state === "2" &&

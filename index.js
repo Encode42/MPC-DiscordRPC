@@ -56,19 +56,12 @@ function initRPC(clientID) {
 		clearInterval(discordRPCLoop);
 		mediaEmitter.emit("discordConnected");
 		rpc.transport.once("close", async () => {
-			await destroyRPC();
 			mediaEmitter.emit("discordDisconnected");
 			discordRPCLoop = setInterval(initRPC, 10000, clientID);
 		});
 	});
 
 	rpc.login(clientID).catch(() => {});
-}
-
-async function destroyRPC() {
-	if (!rpc) return;
-	await rpc.destroy();
-	rpc = null;
 }
 
 initRPC(clientID);
