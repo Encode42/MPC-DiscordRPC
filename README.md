@@ -43,7 +43,7 @@ Please note that this only works with [Discord desktop client](https://discord.c
 1. Open your Media Player Classic, go to `View > Options > Player > Web Interface` and enable `Listen on port:` option. The default port is `13579`, but if you have changed it, please edit the `config.js` file after you download the project.
 ![Enable the option "Listen on port"](https://cdn.discordapp.com/attachments/416273308540207116/428748994307424256/unknown.png)
 2. Install [`Node.JS`](https://nodejs.org/en/download/current/) (we recommend using the latest version).
-3. [Download this project as a .zip file](https://github.com/angeloanan/MPC-DiscordRPC/archive/master.zip), extract it and open a terminal window in the project directory. Otherwise, if you have [Git](https://git-scm.com/) installed, run `git clone https://github.com/Encode42/Simple-MPC-DiscordRPC.git && cd MPC-DiscordRPC`
+3. [Download this project as a .zip file](https://github.com/Encode42/Simple-MPC-DiscordRPC/archive/master.zip), extract it and open a terminal window in the project directory. Otherwise, if you have [Git](https://git-scm.com/) installed, run `git clone https://github.com/Encode42/Simple-MPC-DiscordRPC.git && cd Simple-MPC-DiscordRPC`
 4. Install dependencies using `npm i`.  
 <sub>_You can safely ignore all peer and optional dependencies warnings as they are not required for the program to work._</sub>
 5. Start the program by using the start script, or `npm start`.
